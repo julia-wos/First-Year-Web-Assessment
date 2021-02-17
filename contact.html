@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact me</title>
+    <link rel="stylesheet" type="text/css" href="webstyle.css">
+    <script src="question.js"></script>
+</head>
+<body>
+
+<a href="index.html">
+    <img id="logo" src="images/logo.jpg" alt="logo">
+</a>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <nav class="portfolio">
+        <button class="portfoliodrop">Portfolio
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <nav class="portfoliodrop-content">
+            <a href="animation.html">Animation</a>
+            <a href="digital.html">Digital Artwork</a>
+            <a href="traditional.html">Traditional Artwork</a>
+        </nav>
+    </nav>
+    <a href="aboutme.html">About me</a>
+    <a href="contact.html">Contact me</a>
+</nav>
+
+<section class="QA">
+    <h2>Ask a question!</h2>
+	<hr class="inspireHr">
+    <form id="QandA" method="post" action="contact.html">
+        <p>Name:
+            <input id="name" type="text" placeholder="Enter your name here..." required>
+        </p>
+        <p>Question: <br>
+            <textarea id="question" placeholder="Enetr your question here..." required></textarea>
+        </p>
+    </form>
+
+    <button id="ask" onclick="addQuestions(); return false">Ask!</button>
+
+</section>
+
+<section class="feedback">
+    <h2>Frequently asked questions</h2>
+	<hr class="inspireHr">
+
+    <div>
+        <p id="usernameQuestion"></p>
+    </div>
+
+</section>
+
+</body>
+</html>
